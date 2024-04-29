@@ -17,5 +17,13 @@
     "jsx": "react-jsx",
     "baseUrl": "src"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "paths": {
+    "pages/*": ["pages/*"],
+    "components/*": ["components/*"],
+    "constants/*": ["constants/*"],
+    "types/*": ["types/*"],
+    "hooks/*": ["hooks/*"],
+    "firebaseApp/*": ["firebaseApp/*"]
+  }
 }
