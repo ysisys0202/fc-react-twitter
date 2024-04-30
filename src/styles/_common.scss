@@ -1,0 +1,31 @@
+@import "./constants/colors";
+@import "./constants/fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white;
+}
+html {
+  background-color: $background;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+.visually-hidden {
+  display: none;
+}

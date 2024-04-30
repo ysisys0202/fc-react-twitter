@@ -1,8 +1,12 @@
+import Layout from "components/templates/Layout";
 import { Router } from "components/Router";
-import "./App.css";
 
 const App = () => {
-  return <Router />;
+  return (
+    <Layout>
+      <Router />
+    </Layout>
+  );
 };
 
 export default App;

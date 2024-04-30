@@ -1,0 +1,44 @@
+@import "../constants/fonts";
+
+.post-form {
+  &__textarea {
+    padding: 16px;
+    width: 100%;
+    min-height: 120px;
+    background-color: $background;
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid $border;
+    font-size: 20px;
+    &::placeholder {
+      font-size: 20px;
+      color: $ghost;
+    }
+  }
+  &__submit-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid $border;
+    .post-form__file {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem;
+      cursor: pointer;
+      &-icon {
+        stroke: $primary;
+        &:hover,
+        &:focus {
+          stroke: $primary-active;
+        }
+      }
+    }
+  }
+  &__submit-button {
+    @extend .button;
+    padding: 0.5rem 1rem;
+    background-color: $primary;
+  }
+}

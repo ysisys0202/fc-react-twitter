@@ -24,6 +24,7 @@
     "constants/*": ["constants/*"],
     "types/*": ["types/*"],
     "hooks/*": ["hooks/*"],
+    "styles/*": ["styles/*"],
     "firebaseApp/*": ["firebaseApp/*"]
   }
 }

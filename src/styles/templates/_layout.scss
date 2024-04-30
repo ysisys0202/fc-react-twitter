@@ -1,0 +1,9 @@
+@import "../constants/colors";
+.layout {
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100vh;
+  border-left: 1px solid $border;
+  border-right: 1px solid $border;
+}

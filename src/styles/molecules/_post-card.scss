@@ -1,0 +1,65 @@
+.post-card {
+  padding: 10px 0;
+  border-bottom: 1px solid $border;
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  &__email,
+  &__created-at {
+    font-size: 12px;
+    color: $ghost;
+  }
+  &__profile {
+    padding: 0px 10px;
+    &-image,
+    &-icon {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &__content {
+    padding: 16px 4px;
+    font-weight: 500;
+  }
+  &__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 0 16px;
+    font-size: 14px;
+    &-button {
+      @extend .button;
+      &.post-card__delete {
+        background-color: $danger;
+        &:hover,
+        &:focus {
+          background-color: $danger-active;
+        }
+      }
+      &.post-card__edit {
+        background-color: $ghost;
+        &:hover,
+        &:focus {
+          background-color: $ghost-active;
+        }
+      }
+      &.post-card__likes,
+      &.post-card__comments {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &:hover,
+        &:focus {
+          color: $ghost;
+        }
+      }
+    }
+  }
+}
